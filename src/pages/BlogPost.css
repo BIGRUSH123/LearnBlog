@@ -1,0 +1,248 @@
+.blog-post {
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-content {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--primary-color);
+}
+
+.post-header {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.post-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #e2e8f0;
+  color: var(--text-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.post-body {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.post-body h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 2rem 0 1rem;
+  color: var(--text-color);
+}
+
+.post-body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0 1rem;
+  color: var(--text-color);
+}
+
+.post-body h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 1.25rem 0 0.75rem;
+  color: var(--text-color);
+}
+
+.post-body p {
+  margin-bottom: 1.5rem;
+}
+
+.post-body ul,
+.post-body ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.post-body li {
+  margin-bottom: 0.5rem;
+}
+
+.post-body blockquote {
+  border-left: 4px solid var(--primary-color);
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  background-color: #f8fafc;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.post-body blockquote p {
+  margin: 0;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.post-body pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.post-body code {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.post-body pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+}
+
+.post-body strong {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.post-body a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.3);
+  text-underline-offset: 2px;
+}
+
+.post-body a:hover {
+  text-decoration-color: var(--primary-color);
+}
+
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.post-navigation .nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.post-navigation .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.post-share h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.share-buttons button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.share-buttons button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 1rem 0;
+  }
+  
+  .post-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .post-body {
+    font-size: 1rem;
+  }
+  
+  .post-body h2 {
+    font-size: 1.5rem;
+  }
+  
+  .post-body h3 {
+    font-size: 1.25rem;
+  }
+  
+  .post-body h4 {
+    font-size: 1.125rem;
+  }
+  
+  .post-body pre {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .post-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
